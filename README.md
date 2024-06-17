@@ -24,3 +24,10 @@
 # NpcJSEvent
 + idnpc.hitNPC(function() { ваш код }); Выполняет при ударе нпс
 + idnpc.interactionsNPC(function() { ваш код }); Выполняет при взаимодействии нпс
+# Events
++ EventBlockClic.setBlock(function() { // ваш код },block.TNT); срабатывает когда игрок кликает по определёному блоку (динамит)
++ EventBlockBreak.setItem(function() { // ваш код },item.TNT); срабытывет когда ломает блок держа предмет в руке (динамит)
++ ItemToss.addItem(functuin() { // ваш код },item.TNT); срабатывает когда игрок выбрасывает предмет (динамит)
++ DealEventPlayer.addEvent(function() { // ваш код }); // срабатывает когда игрок умирает
++ AttackEventPlayer.addEvent(function() { // ваш код )); // срабатывает когда игрок получает урон
++ BlockEvent.BlockBreak(function() { // ваш код }); // срабатывает когда игрок ломает блок
