@@ -1,4 +1,13 @@
 # APIJS
++ api.executeStory("test story"); выполняет историю
++ api.playerX(); возрощает позицию x игрока
++ api.playerY(); возрощает позицию y игрока
++ api.playerZ(); возрощает позицию z игрока
++ api.playerName(); возрощает имя игрока можно вызывать player.sendMessage("???","привет " + api.playerName());
++ api.worldName(); возрощает имя мира
++ api.setBlock(block.TNT,0,-60,0); ставит блок в мире
++ api.cannot(); делает чтобы игрок не мог ломать блоки
++ api.allow(); делает чтобы игрок мог ломать блоки
 + api.executecommand(); выполняет команду от именни игрока
 # CameraJS
 + camera.setCamera(1,2,3,4,5,6,7,8,9,0.01); устонавиливает камеру в 1 2 3 и плавно плывёт к 4 5 6 смотря 7 8 9 со скорость 0.001
@@ -22,6 +31,7 @@
 +  idnpc.getY();
 +  idnpc.getZ();
 # NpcJSEvent
++ idnpc.performActionBeforeDistance(function() { // ваш код },5 // дистанция); // выполняет если игрок подходит к нпс на 5 блоков
 + idnpc.hitNPC(function() { ваш код }); Выполняет при ударе нпс
 + idnpc.interactionsNPC(function() { ваш код }); Выполняет при взаимодействии нпс
 # Events
@@ -31,3 +41,16 @@
 + DealEventPlayer.addEvent(function() { // ваш код }); // срабатывает когда игрок умирает
 + AttackEventPlayer.addEvent(function() { // ваш код )); // срабатывает когда игрок получает урон
 + BlockEvent.BlockBreak(function() { // ваш код }); // срабатывает когда игрок ломает блок
+# Overlay
++ overlay.openOverlay(); открывает чёрный экран
++ overlay.closeOverlay(); закрывает чёрный экран
+# Player
++ player.sendMessage("text"); отправляет в чат сообщение
++ player.sendMessage("???","text"); отправляет в чат сообщение с ником
++ player.teleport(0,-60,0); телепортирует игрока 
++ player.kill(); убивает игрока
+# Dialog
++ DialogManager.addKey1(function() { },"TEXT"); // создаёт кнопку
++ DialogManager.open(); // открывает диалог
++ DialogManager.setVop("TEXT"); // задаёт вопрос
+# 1.2.5
